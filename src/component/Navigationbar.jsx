@@ -5,12 +5,12 @@ function Navigationbar() {
     return (
         <nav className="navbar navbar-expand-lg fixed-top bg-dark border-body" data-bs-theme="dark">
             <div className="container">
-                <a className="navbar-brand me-5 fw-bold"><i className="fa-brands fa-d-and-d fa-lg"></i> My Profile</a>
+                <a className="navbar-brand fw-bold"><i className="fa-brands fa-d-and-d fa-lg"></i> My Profile</a>
                 <button className="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i className="fa-solid fa-bars"></i></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to="/Home"><i className="fa-solid fa-dungeon"></i> Home</Link>
                         </li>
