@@ -2,7 +2,7 @@ import React from 'react'
 
 function InfoTwo() {
     return (
-        <div className='p-5 bg-white text-dark'>
+        <div className='p-3 bg-white text-dark'>
             <div className='container'>
                 <div className="card border border-0 mb-3">
                     <div className="row g-0">
@@ -14,7 +14,7 @@ function InfoTwo() {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <img src="https://c4.wallpaperflare.com/wallpaper/611/838/413/spiderman-hd-4k-superheroes-wallpaper-thumb.jpg" className="img-fluid rounded" alt="..." />
+                            <img src="https://c4.wallpaperflare.com/wallpaper/966/951/802/digital-digital-art-artwork-illustration-fantasy-art-hd-wallpaper-thumb.jpg" className="img-fluid rounded" alt="..." />
                         </div>
                     </div>
                 </div>

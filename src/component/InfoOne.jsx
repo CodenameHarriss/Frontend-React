@@ -2,12 +2,12 @@ import React from 'react'
 
 function InfoOne() {
     return (
-        <div className='p-5 bg-white text-dark'>
+        <div className='p-3 bg-white text-dark'>
             <div className='container'>
                 <div className="card border border-0 mb-3">
                     <div className="row g-0">
                         <div className="col-md-6">
-                            <img src="https://c4.wallpaperflare.com/wallpaper/611/838/413/spiderman-hd-4k-superheroes-wallpaper-thumb.jpg" className="img-fluid rounded" alt="..." />
+                            <img src="https://c4.wallpaperflare.com/wallpaper/268/96/863/anime-anime-girls-original-characters-short-hair-wallpaper-thumb.jpg" className="img-fluid rounded" alt="..." />
                         </div>
                         <div className="col-md-6 align-self-center">
                             <div className="card-body">
