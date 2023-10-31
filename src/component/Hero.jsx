@@ -6,7 +6,7 @@ function Hero() {
             <div className='container text-center'>
                 <h1 className='fw-bold text-white'>Welcome to Website</h1>
                 <p className='text-title mt-4'>Discover amazing things with Bootstrap 5.</p>
-                <a href="" className='btn btn-primary'>Get Start</a>
+                <a href="" className='btn btn-primary'>Get Started</a>
             </div>
         </div>
     )
