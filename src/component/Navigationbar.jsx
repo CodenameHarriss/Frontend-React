@@ -3,25 +3,25 @@ import { Link } from 'react-router-dom'
 
 function Navigationbar() {
     return (
-        <nav className="navbar navbar-expand-lg fixed-top bg-dark border-body" data-bs-theme="dark">
+        <nav className="navbar navbar-expand-lg fixed-top border-body" style={{ background: '#573dff' }}>
             <div className="container">
-                <a className="navbar-brand fw-bold"><i className="fa-brands fa-d-and-d fa-lg"></i> My Profile</a>
-                <button className="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a className="navbar-brand fw-bold text-white"><i className="fa-brands fa-d-and-d fa-lg"></i> My Website</a>
+                <button className="navbar-toggler border border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i className="fa-solid fa-bars"></i></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/Home"><i className="fa-solid fa-dungeon"></i> Home</Link>
+                            <Link className="nav-link active text-white" aria-current="page" to="/"><i className="fa-solid fa-dungeon"></i> Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/Content"><i className="fa-solid fa-ring"></i> Content</Link>
+                            <Link className="nav-link active text-white" to="/Content"><i className="fa-solid fa-ring"></i> Content</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/About"><i className="fa-solid fa-scroll"></i> About</Link>
+                            <Link className="nav-link active text-white" to="/About"><i className="fa-solid fa-scroll"></i> About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/Contact"><i className="fa-solid fa-hat-wizard"></i> Contact</Link>
+                            <Link className="nav-link active text-white" to="/Contact"><i className="fa-solid fa-hat-wizard"></i> Contact</Link>
                         </li>
                         {/* <li className="nav-item dropdown">
                             <a className="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,7 +37,7 @@ function Navigationbar() {
                     </ul>
                     <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-primary" type="submit">Search</button>
+                        <button className="btn border border-0 text-white" style={{ background: '#e85500' }} type="submit">Search</button>
                     </form>
                 </div>
             </div>
