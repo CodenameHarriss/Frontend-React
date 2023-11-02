@@ -27,7 +27,7 @@ function Contact() {
             message: form.message
         }
 
-        addDoc(collection(db, 'contact'), contact).then((res) => {
+        addDoc(collection(db, 'contact'), contact).then(() => {
             //console.log(res)
             Swal.fire({
                 icon: 'success',
@@ -37,7 +37,7 @@ function Contact() {
         }).catch(err => console.log(err))
     }
 
-    const image = 'https://c4.wallpaperflare.com/wallpaper/177/182/521/abstract-fantasy-art-simple-background-digital-art-wallpaper-preview.jpg';
+    const image = 'https://www.cloudcoding.co/images/coder.png';
 
     return (
         <div className='container'>
@@ -45,10 +45,10 @@ function Contact() {
                 <h2 className='mt-2'>Contact to Me</h2>
             </div>
             <div className='border border-0 mb-3 mt-2'>
+                <div className='text-center'>
+                    <img src={image} alt="" className="img-fluid rounded" style={{ height: 277.5, width: 280, objectFit: 'cover' }} />
+                </div>
                 <div className='row g-0'>
-                    <div className='col-md-12 text-center'>
-                        <img src={image} alt="" className="img-fluid rounded" />
-                    </div>
                     <form onSubmit={handleSubmit}>
                         <div className='d-flex justify-content-center'>
                             <div className='col-md-8'>

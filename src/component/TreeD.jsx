@@ -8,7 +8,7 @@ import Earth from '../../public/Earth'
 function TreeD() {
     return (
         <Canvas>
-            <ambientLight intensity={1.5} />
+            <ambientLight intensity={3} />
             <OrbitControls enableZoom={false} />
             <Suspense fallback={null}>
                 <Earth />
