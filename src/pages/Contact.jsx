@@ -46,7 +46,7 @@ function Contact() {
             </div>
             <div className='border border-0 mb-3 mt-2'>
                 <div className='text-center'>
-                    <img src={image} alt="" className="img-fluid rounded" style={{ height: 277.5, width: 280, objectFit: 'cover' }} />
+                    <img src={image} alt="contact" className="img-fluid rounded" style={{ height: 277.5, width: 280, objectFit: 'cover' }} />
                 </div>
                 <div className='row g-0'>
                     <form onSubmit={handleSubmit}>
