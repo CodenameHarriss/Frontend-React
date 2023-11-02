@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { db } from '../firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import Swal from 'sweetalert2';
@@ -9,17 +9,9 @@ function Contact() {
         name: '', email: '', message: ''
     })
 
-    const handleChange = (e) => {
-        // console.log(e.target.name, e.target.value)
-        // e.preventDefault();
-        const { name, value } = e.target
-        setForm({
-            ...form,
-            [name]: value,
-        })
-    }
+    const handleSubmit = (e) => {
 
-    const handleAddData = async () => {
+        e.preventDefault();
 
         if (form.name === '' || form.name === '' || form.message === '') {
             Swal.fire({
@@ -29,8 +21,14 @@ function Contact() {
             return;
         }
 
-        await addDoc(collection(db, 'contact'), form).then((res) => {
-            console.log(res)
+        const contact = {
+            name: form.name,
+            email: form.email,
+            message: form.message
+        }
+
+        addDoc(collection(db, 'contact'), contact).then((res) => {
+            //console.log(res)
             Swal.fire({
                 icon: 'success',
                 title: 'ส่งข้อมูลเสร็จสิ้น',
@@ -51,25 +49,27 @@ function Contact() {
                     <div className='col-md-12 text-center'>
                         <img src={image} alt="" className="img-fluid rounded" />
                     </div>
-                    <div className='d-flex justify-content-center'>
-                        <div className='col-md-8'>
-                            <div className="mb-3">
-                                <label className="form-label">NAME :</label>
-                                <input value={form.name} onChange={handleChange} type="text" name='name' className="form-control" placeholder='NAME' />
-                            </div>
-                            <div className="mb-3">
-                                <label className="form-label">EMAIL :</label>
-                                <input value={form.email} onChange={handleChange} type="email" name='email' className="form-control" placeholder='EMAIL' />
-                            </div>
-                            <div className="mb-3">
-                                <label className="form-label">MESSAGE :</label>
-                                <textarea value={form.message} onChange={handleChange} name='message' className="form-control" rows="3" placeholder='MESSAGE'></textarea>
-                            </div>
-                            <div className='d-grid gap-2'>
-                                <button onClick={handleAddData} type="submit" className="btn btn-primary">Submit</button>
+                    <form onSubmit={handleSubmit}>
+                        <div className='d-flex justify-content-center'>
+                            <div className='col-md-8'>
+                                <div className="mb-3">
+                                    <label className="form-label">Name :</label>
+                                    <input onChange={e => setForm({ ...form, name: e.target.value })} type="text" name='name' className="form-control" placeholder='name' />
+                                </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Email :</label>
+                                    <input onChange={e => setForm({ ...form, email: e.target.value })} type="email" name='email' className="form-control" placeholder='email' />
+                                </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Message :</label>
+                                    <textarea onChange={e => setForm({ ...form, message: e.target.value })} name='message' className="form-control" rows="3" placeholder='message'></textarea>
+                                </div>
+                                <div className='d-grid gap-2'>
+                                    <button type="submit" className="btn btn-primary">Submit</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
