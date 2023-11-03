@@ -54,15 +54,15 @@ function Contact() {
                             <div className='col-md-8'>
                                 <div className="mb-3">
                                     <label className="form-label">Name :</label>
-                                    <input value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} type="text" name='name' className="form-control" placeholder='name' />
+                                    <input value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} type="text" name='name' className="form-control border-info" placeholder='name' />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label">Email :</label>
-                                    <input value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} type="email" name='email' className="form-control" placeholder='email' />
+                                    <input value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} type="email" name='email' className="form-control border-info" placeholder='email' />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label">Message :</label>
-                                    <textarea value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} name='message' className="form-control" rows="3" placeholder='message'></textarea>
+                                    <textarea value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} name='message' className="form-control border-info" rows="3" placeholder='message'></textarea>
                                 </div>
                                 <div className='d-grid gap-2'>
                                     <button type="submit" className="btn btn-primary">Submit</button>

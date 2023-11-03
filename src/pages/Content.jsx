@@ -8,7 +8,7 @@ function Content() {
             </div>
             <div className='row col-md-4 mt-2'>
                 <form className="d-flex" role="search">
-                    <input className="form-control me-2" type="search" placeholder="Search for cars" aria-label="Search" />
+                    <input className="form-control border-info me-2" type="search" placeholder="Search for cars" aria-label="Search" />
                     <button className="btn btn-primary" type="submit">Search</button>
                 </form>
             </div>
@@ -73,6 +73,21 @@ function Content() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='mt-3'>
+                <nav aria-label="Page navigation example">
+                    <ul className="pagination justify-content-end">
+                        <li className="page-item disabled">
+                            <a className="page-link">ก่อนหน้า</a>
+                        </li>
+                        <li className="page-item"><a className="page-link" href="#">1</a></li>
+                        <li className="page-item"><a className="page-link" href="#">2</a></li>
+                        <li className="page-item"><a className="page-link" href="#">3</a></li>
+                        <li className="page-item">
+                            <a className="page-link" href="#">ถัดไป</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     )

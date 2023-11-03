@@ -13,21 +13,41 @@ function Experiences() {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="July 2019 - April 2023"
+                    date="July 2019 - April 2020"
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 >
-                    <h3 className="vertical-timeline-element-title">Study</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Songkhla Rajabhat University</h4>
+                    <h4 className="vertical-timeline-element-title">Card title</h4>
+                    <h5 className="vertical-timeline-element-subtitle">This content is a little bit longer.</h5>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: 'rgb(236, 57, 18)', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(236, 57, 18)' }}
-                    date="September 2023 - Current"
+                    date="July 2020 - April 2021"
                     iconStyle={{ background: 'rgb(236, 57, 18)', color: '#fff' }}
                 >
-                    <h3 className="vertical-timeline-element-title">Work</h3>
-                    <h4 className="vertical-timeline-element-subtitle">BAN SUZUKI</h4>
+                    <h4 className="vertical-timeline-element-title">Card title</h4>
+                    <h5 className="vertical-timeline-element-subtitle">This content is a little bit longer.</h5>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                    date="July 2021 - April 2022"
+                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                >
+                    <h4 className="vertical-timeline-element-title">Card title</h4>
+                    <h5 className="vertical-timeline-element-subtitle">This content is a little bit longer.</h5>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: 'rgb(236, 57, 18)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(236, 57, 18)' }}
+                    date="September 2022 - Current"
+                    iconStyle={{ background: 'rgb(236, 57, 18)', color: '#fff' }}
+                >
+                    <h4 className="vertical-timeline-element-title">Card title</h4>
+                    <h5 className="vertical-timeline-element-subtitle">This content is a little bit longer.</h5>
                 </VerticalTimelineElement>
             </VerticalTimeline>
         </div>

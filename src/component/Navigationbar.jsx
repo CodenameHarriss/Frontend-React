@@ -10,18 +10,18 @@ function Navigationbar() {
                     <span><i className="fa-solid fa-bars"></i></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+                    <ul className="navbar-nav nav-underline ms-auto mb-2 mb-lg-0 me-3">
                         <li className="nav-item">
-                            <Link className="nav-link active text-white" aria-current="page" to="/"><i className="fa-solid fa-dungeon"></i> Home</Link>
+                            <Link className="nav-link text-white" aria-current="page" to="/"><i className="fa-solid fa-dungeon"></i> Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active text-white" to="/Content"><i className="fa-solid fa-ring"></i> Content</Link>
+                            <Link className="nav-link text-white" to="/Content"><i className="fa-solid fa-ring"></i> Content</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active text-white" to="/About"><i className="fa-solid fa-scroll"></i> About</Link>
+                            <Link className="nav-link text-white" to="/About"><i className="fa-solid fa-scroll"></i> About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active text-white" to="/Contact"><i className="fa-solid fa-hat-wizard"></i> Contact</Link>
+                            <Link className="nav-link text-white" to="/Contact"><i className="fa-solid fa-hat-wizard"></i> Contact</Link>
                         </li>
                         {/* <li className="nav-item dropdown">
                             <a className="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
