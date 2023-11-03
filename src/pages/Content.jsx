@@ -4,7 +4,7 @@ function Content() {
     return (
         <div className='container'>
             <div className='text-center'>
-                <h2 className='mt-2'>My Content Cars</h2>
+                <h2 className='fw-bold mt-2'>My Content Cars</h2>
             </div>
             <div className='row col-md-4 mt-2'>
                 <form className="d-flex" role="search">

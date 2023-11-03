@@ -42,7 +42,7 @@ function Contact() {
     return (
         <div className='container'>
             <div className='text-center mt-2'>
-                <h2 className='mt-2'>Contact to Me</h2>
+                <h2 className='fw-bold mt-2'>Contact to Me</h2>
             </div>
             <div className='border border-0 mb-3 mt-2'>
                 <div className='text-center'>
