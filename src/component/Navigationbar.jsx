@@ -24,7 +24,7 @@ function Navigationbar() {
                             <Link className="nav-link text-white me-3" to="/Contact"><i className="fa-solid fa-hat-wizard"></i> Contact</Link>
                         </li>
                         {/* <li className="nav-item dropdown">
-                            <a className="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Dropdown
                             </a>
                             <ul className="dropdown-menu">
