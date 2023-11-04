@@ -65,7 +65,7 @@ function Contact() {
                                     <textarea value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} name='message' className="form-control border-info" rows="3" placeholder='message'></textarea>
                                 </div>
                                 <div className='d-grid gap-2'>
-                                    <button type="submit" className="btn btn-primary">Submit</button>
+                                    <button type="submit" className="btn btn-primary rounded-pill">Submit</button>
                                 </div>
                             </div>
                         </div>
