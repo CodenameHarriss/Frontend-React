@@ -88,7 +88,7 @@ function Content() {
                     </div>
                 </div>
             </div> */}
-            <div className='mt-3'>
+            {/* <div className='mt-3'>
                 <nav aria-label="Page navigation example">
                     <ul className="pagination justify-content-end">
                         <li className="page-item disabled">
@@ -102,7 +102,7 @@ function Content() {
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </div> */}
         </div>
     )
 }
