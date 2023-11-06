@@ -1,6 +1,8 @@
 import React from 'react'
+import { listCars } from '../data/data'
 
 function Content() {
+    console.log(listCars);
     return (
         <div className='container'>
             <div className='text-center'>
@@ -13,6 +15,19 @@ function Content() {
                 </form>
             </div>
             <div className='row mt-3'>
+                {listCars.map((items, index) =>
+                    <div className='col-md-4 mt-2'>
+                        <div className="card h-100 mb-3 border border-0 shadow" key={index}>
+                            <img src={items.image} className="card-img-top" />
+                            <div className="card-body">
+                                <h5 className="card-title">{items.title}</h5>
+                                <p className="card-text">{items.description}</p>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </div>
+            {/* <div className='row mt-3'>
                 <div className='col-md-4 mt-2'>
                     <div className="card h-100 mb-3 border border-0 shadow">
                         <img src="https://c4.wallpaperflare.com/wallpaper/666/167/593/dodge-challenger-srt-hellcat-widebody-dodge-challenger-2018-cars-4k-wallpaper-preview.jpg" className="card-img-top" alt="p1" />
@@ -73,7 +88,7 @@ function Content() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className='mt-3'>
                 <nav aria-label="Page navigation example">
                     <ul className="pagination justify-content-end">
