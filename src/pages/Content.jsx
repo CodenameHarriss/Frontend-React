@@ -2,7 +2,6 @@ import React from 'react'
 import { listCars } from '../data/data'
 
 function Content() {
-    console.log(listCars);
     return (
         <div className='container'>
             <div className='text-center'>
@@ -16,11 +15,11 @@ function Content() {
             </div>
             <div className='row mt-3'>
                 {listCars.map((items, index) =>
-                    <div className='col-md-4 mt-2'>
-                        <div className="card h-100 mb-3 border border-0 shadow" key={index}>
+                    <div className='col-md-4 mt-2' key={index}>
+                        <div className="card h-100 mb-3 border border-0 shadow">
                             <img src={items.image} className="card-img-top" />
                             <div className="card-body">
-                                <h5 className="card-title">{items.title}</h5>
+                                <h3 className="card-title fw-semibold">{items.title}</h3>
                                 <p className="card-text">{items.description}</p>
                             </div>
                         </div>
