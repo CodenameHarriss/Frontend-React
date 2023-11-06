@@ -30,7 +30,7 @@ export const listCars = [
         image: "https://c4.wallpaperflare.com/wallpaper/410/494/431/racing-f1-car-formula-1-race-car-hd-wallpaper-preview.jpg"
     },
     {
-        title: "Nissan Skyline gt r34",
+        title: "Nissan Skyline GT R34",
         description: "The car was named at the time by BBC's Top Gear as the only true Japanese contribution in the line of supercars, and by Jeremy Clarkson as one of the best cars in the world.",
         image: "https://c4.wallpaperflare.com/wallpaper/308/488/991/nissan-skyline-gt-r-r34-sports-car-digital-art-need-for-speed-wallpaper-preview.jpg"
     },
