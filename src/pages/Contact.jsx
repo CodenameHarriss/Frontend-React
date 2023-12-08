@@ -6,14 +6,16 @@ import Swal from 'sweetalert2';
 function Contact() {
 
     const [form, setForm] = useState({
-        name: '', email: '', message: ''
+        name: '', 
+        email: '', 
+        message: ''
     })
 
     const handleSubmit = (e) => {
 
         e.preventDefault();
 
-        if (form.name === '' || form.name === '' || form.message === '') {
+        if (form.name === '' || form.email === '' || form.message === '') {
             Swal.fire({
                 icon: 'error',
                 title: 'กรุณากรอกข้อมูลให้ครบ',
